@@ -33,3 +33,12 @@ torniamo a scrivere in italiano
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
 Buon lavoro e buon divertimento! 🙂
+
+## es 1 scomposizione in sotto problemi
+1. Cere una lista email di invitati
+2. chiedo all'utente la sua email
+3. controllare se è nella lista di chi può accedere
+4. stampo messaggio appropriato
+
+
+## es 2 scomposizione in sotto problemi
