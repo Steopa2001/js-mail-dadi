@@ -1,4 +1,4 @@
-// ES 1
+// // ES 1
 
 //Lista invitati
 const listEmail = [
@@ -18,14 +18,14 @@ let foundIt = false;
 //eseguo prompt per il cliente
 const userEmail  = prompt('Digita la tua email');
 
-//eseguo il ciclo for 
+//eseguo il ciclo for
 for (let i = 0; i < listEmail.length; i++) {
   if (userEmail === listEmail[i]) {
     foundIt = true;
   }
 }
 
-//risultato
+// //risultato
 if (foundIt) {
   console.log("Benvenuto alla festa!");
 } else {
@@ -35,6 +35,37 @@ if (foundIt) {
 //ES 2
 
 //dichiaro variabili
-let randomNumbers = 0;
+const randomPcNumbers = [];
+const userNumbers = [];
 
-for (let i = 0; )
+let pcPoints = 0;
+let playerPoints = 0;
+
+//inizio il ciclo for
+for (let i = 0; i < 2; i++) {
+  const pcNumber = Math.floor(Math.random() * 6) + 1;
+  const userNumber = parseInt(prompt('Inserisci il numero'));
+
+  randomPcNumbers.push(pcNumber);
+  userNumbers.push(userNumber);
+
+  if (pcNumber > userNumber) {
+    pcPoints++
+  }
+  else if (pcNumber < userNumber) {
+    playerPoints++
+  }
+}
+
+//controllo quale delle due variabili sia maggiore
+if (pcPoints > playerPoints) {
+  console.log(`I numeri del pc sono ${randomPcNumbers}. I numeri dell'utente sono ${userNumbers}. Punteggio pc: ${pcPoints}.
+    Punteggio utente: ${playerPoints}. ha vinto il computer`);
+    }
+  else if (pcPoints < playerPoints) {
+   console.log(`I numeri del pc sono ${randomPcNumbers}. I numeri dell'utente sono ${userNumbers}. Punteggio pc: ${pcPoints}.
+    Punteggio utente: ${playerPoints}. Hai vinto`);
+}
+else {
+  console.log(`Punteggio pc: ${pcPoints}. Punteggio utente: ${playerPoints}. Pareggio`);
+    }
