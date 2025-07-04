@@ -42,3 +42,6 @@ Buon lavoro e buon divertimento! 🙂
 
 
 ## es 2 scomposizione in sotto problemi
+1. genero un numero random da 1 a 6
+2. lo genero sia per il giocatore sia per il computer
+3. stabilire chi è il vincitore

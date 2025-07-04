@@ -1,3 +1,5 @@
+// ES 1
+
 //Lista invitati
 const listEmail = [
   'jessica@gmail.com',
@@ -29,3 +31,10 @@ if (foundIt) {
 } else {
   console.log("Mi dispiace, non sei nella lista degli invitati.");
 }
+
+//ES 2
+
+//dichiaro variabili
+let randomNumbers = 0;
+
+for (let i = 0; )
