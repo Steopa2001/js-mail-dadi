@@ -44,7 +44,7 @@ let playerPoints = 0;
 //inizio il ciclo for
 for (let i = 0; i < 2; i++) {
   const pcNumber = Math.floor(Math.random() * 6) + 1;
-  const userNumber = parseInt(prompt('Inserisci il numero'));
+  const userNumber = parseInt(prompt('Inserisci il numero da 1 a 6'));
 
   randomPcNumbers.push(pcNumber);
   userNumbers.push(userNumber);
